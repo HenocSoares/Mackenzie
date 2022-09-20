@@ -15,6 +15,6 @@ if delta == 0:
 elif delta > 0:
   x1 = (-b+(math.sqrt(delta)))/(2*a)
   x2 = (-b-(math.sqrt(delta)))/(2*a)
-  print("Através de Bháskara aplicado Δ em temos que, X1 é igual a: ", x1, "e X2 é igual a: ", x2)
+  print("Através da fórmula de Bháskara aplicada a Δ temos que, X1 é igual a: ", x1, "e X2 é igual a: ", x2)
 else:
   print("Delta não possui raízes reais")
