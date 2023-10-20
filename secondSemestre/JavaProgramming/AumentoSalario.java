@@ -39,7 +39,7 @@ public class AumentoSalario {
     case 5:
       System.out.println("You chose 'CEO'.");
       job = "CEO";
-      System.out.println("No raise necessary!");
+      System.out.println("No raise for now! Better luck next time! ;)");
       prctg = 0;
       break;
     default:
