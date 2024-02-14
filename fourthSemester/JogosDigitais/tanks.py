@@ -64,3 +64,9 @@ print(hit_tank)
 # Should it blow?
 if hit_tank.armor <= 0:
 	hit_tank.explode()
+	# Removes exploded battle tank
+	battle_tanks.pop(battle_tanks.index(hit_tank))
+
+# Current status
+for battle_tank in battle_tanks:
+	print(battle_tank)
