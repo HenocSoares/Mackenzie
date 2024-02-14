@@ -1,18 +1,29 @@
-  1 import random
-  2 
-  3 crafts_num = int(input("How many space crafts do you wish? "))
-  4 
-  5 while crafts_num < 2 or crafts_num > 10:
-  6         crafts_num = int(input("Please, follow the range of 2 to 10: "))
-  7         
-  8 def create_spacecrafts(crafts_num):
-  9         """
- 10         Creates a dictionary that will contain 'crafts_num' of spacecrafts ob
-    jects with unique names.
- 11         Args: 
- 12             crafts_num: total crafts to make
- 13 
- 14         Returns:
- 15             a dictionary where keys are unique spaceship names (based on lett    er in lowercase plus its names)    
- 16         """
- 17        
+import random
+
+crafts_num = int(input("How many space crafts do you wish? "))
+
+while crafts_num < 2 or crafts_num > 10:
+	crafts_num = int(input("Please, follow the range of 2 to 10: "))
+
+def create_spacecrafts():
+	"""
+	Creates a dictionary that will contain 'crafts_num' of spacecrafts objects with unique names.
+	Args: 
+	    crafts_num: total crafts to make
+
+	Returns:
+	    a dictionary where keys are unique spaceship names (based on letter in lowercase plus its names)	
+	"""
+	
+	crafts = {}
+	start_letter = 'a'
+	max_letter = chr(ord(start_letter) + crafts_num - 1)
+
+	while ord(start_letter) <= ord(max_letter):
+		name = input(f"Enter the name of the spacecraft that starts with '{start_letter}': ")
+		crafts[start_letter] = name
+		start_letter = chr(ord(start_letter) +1)	
+
+	print(crafts)
+
+create_spacecrafts()
