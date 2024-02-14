@@ -5,7 +5,7 @@ class Tank(object):
         self.name = name
         self.alive = True
         self.ammo = 5
-        self.armor = 60
+        self.armor = 60 
 
     def __str__(self):
         if self.alive:
