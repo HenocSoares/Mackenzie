@@ -40,33 +40,38 @@ for i in range(5):
 for battle_tank in battle_tanks:
     print(battle_tank)
 
-# Randomly shuffle list of battle tanks
-random.shuffle(battle_tanks)
+# Start and repeat the draw process until we have a winner
+while len(battle_tanks) > 1:
+	# Randomly shuffle the list of battle tanks
+	random.shuffle(battle_tanks)
 
-# The tank at index 0 will first attack
-attacking_tank = battle_tanks[0]
-print("Attacking tank:", attacking_tank)
+	# Tank at index [0] will strike first
+	attacking_tank = battle_tanks[0]
+	print("Attacking tank:", attacking_tank)
 
-# Shuffling remaining items starting on index 1
-remaining_tanks = battle_tanks[1:]
-random.shuffle(remaining_tanks)
+	# Shuffling remaining items for first hit to happen from [1]
+	remaining_tanks = battle_tanks[1:]
+	random.shuffle(remaining_tanks)
 
-# Tank at index 0 receives the hit
-hit_tank = remaining_tanks[0]
-print("Receiving tank:", hit_tank)
+	# Tank at [0] receives the hit
+	hit_tank = remaining_tanks[0]
+	print("Attacked tank:", hit_tank)
 
-# Attack and hit happens
-attacking_tank.fires_at(hit_tank)
-print(attacking_tank)
-print(hit_tank)
+	# Attack plus hit happens
+	attacking_tank.fires_at(hit_tank)
+	print(attacking_tank)
+	print(hit_tank)
 
+	# Check if hit_tank should explode
+	if hit_tank.armor <= 0:
+		hit_tank.explode()
+		# Removing exploded battle vessel via pop()
+		battle_tanks.pop(battle_tanks.index(hit_tank))
 
-# Should it blow?
-if hit_tank.armor <= 0:
-	hit_tank.explode()
-	# Removes exploded battle tank
-	battle_tanks.pop(battle_tanks.index(hit_tank))
+	# Displays the updated state of the tanks after each round
+	print("\nCurrent state:\n")
+	for battle_tank in battle_tanks:
+		print(battle_tank)
 
-# Current status
-for battle_tank in battle_tanks:
-	print(battle_tank)
+# Prints the winner vessel's name
+print("The winner is:", battle_tanks[0])
