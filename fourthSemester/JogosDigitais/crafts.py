@@ -26,4 +26,8 @@ def create_spacecrafts():
 
 	print(crafts)
 
+while len(crafts) > 1:
+	random.shuffle(crafts)
+
 create_spacecrafts()
+
