@@ -24,10 +24,37 @@ def create_spacecrafts():
 		crafts[start_letter] = name
 		start_letter = chr(ord(start_letter) +1)	
 
-	print(crafts)
+	return crafts
+
+class SpaceCraft:
+	def __init__(self, name):
+		self.name = name
+		self.alive = True
+		self.laser = 5
+		self.armor = 70
+	
+	def __str__(self)
+		if self.alive:
+			return "%s (%i armor, %i lasers)" % (self.name, self.armor, self.lasers)
+		else:
+			return "%s (DEAD)" % self.name
+		
+	def fires_at(self, enemy):
+		if self.lasers >= 1;
+			self.lasers -= 1;
+			print(self.name, "fires on", enemy.name)
+			enemy.hit()
+		else:
+			print(self.name, "has no shots!")
+			
+	def hit(self)
+		self.armor -= 18
+		print(self.name, "has been hit")
+		if self.armor <= 0:
+			self.explode()
+			
 
 while len(crafts) > 1:
 	random.shuffle(crafts)
 
 create_spacecrafts()
-
