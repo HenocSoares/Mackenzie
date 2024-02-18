@@ -30,8 +30,8 @@ class SpaceCraft:
 	def __init__(self, name):
 		self.name = name
 		self.alive = True
-		self.laser = 5
-		self.armor = 70
+		self.laser = 9
+		self.armor = 72
 	
 	def __str__(self)
 		if self.alive:
