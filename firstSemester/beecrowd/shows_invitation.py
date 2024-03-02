@@ -12,3 +12,10 @@ Observe que as peças calculadas devem ser um número inteiro,
 portanto, o resultado da quantidade de convites deve ser 
 arredondado para cima, usando a função matemática detalhada em Python.
 '''
+
+import math
+
+custo = float(input("Informe o custo total do espetáculo (R$): "))
+preco_do_convite = float(input("Agora o preço (R$) do convite: "))
+
+qtd_min_a_vender = math.ceil(custo / preco_do_convite)
