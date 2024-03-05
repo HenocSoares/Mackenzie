@@ -20,6 +20,7 @@ qtd = math.ceil(custo / convite)
 # A quantidade de convites que devem ser vendidos para que se tenha um lucro de 23%.
 
 lucro = custo * 1.23
+qtd_lucro = math.ceil((custo + lucro) / convite) # Cálculo da quantidade necessária de convites.
 
 print("Quantidade mínima para alcançar o custo: ", qtd)
-print("O necessário para se obter lucro de 23%: ", lucro)
+print("O necessário para se obter lucro de 23%: ", qtd_lucro)
