@@ -8,5 +8,11 @@ b) A quantidade de convites que devem ser vendidos para que se tenha um lucro de
 Observe que as quantidades calculadas devem ser um número inteiro, portanto, o resultado da quantidade de convites deve ser arredondada para cima, usando a função matemática apropriada em Python.
 '''
 
-custo = float(input())
-preco = float(input())
+custo = float(input("Entre com o custo total: "))
+preco = float(input("Informe o preço do convite unitário: "))
+
+# A quantidade de vendas (em convites) para pelo menos alcançar o custo do espetáculo.
+
+
+
+# A quantidade de convites que devem ser vendidos para que se tenha um lucro de 23%.
