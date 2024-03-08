@@ -65,7 +65,7 @@ while len(battle_tanks) > 1:
     # Check if hit_tank should explode
     if hit_tank.armor <= 0:
         hit_tank.explode()
-        # Removing exploded battle vessel via pop()
+        # Removing exploded battle vessel via pop() function
         battle_tanks.pop(battle_tanks.index(hit_tank))
 
     # Displays the updated state of the tanks after each round
