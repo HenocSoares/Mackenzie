@@ -16,7 +16,7 @@ while True:
 
     x, y = pygame.mouse.get_pos()
 
-    screen.fill((255,255,255))
+    screen.fill((255,255,255)) 
     screen.blit(tank,(x,y))
 
     pygame.display.update()
