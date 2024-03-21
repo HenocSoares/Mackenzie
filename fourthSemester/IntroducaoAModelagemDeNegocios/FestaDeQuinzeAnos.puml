@@ -1,0 +1,50 @@
+@startuml
+
+title EAP - Projeto de Festa de 15 Anos
+
+node "Festa de 15 Anos" {
+  node "Gerenciamento do Projeto"
+  node "Preparação do Evento" {
+    node "Reunião para seleção de tema, data e local"
+    node "Lista de convidados"
+    node "Definição do limite do orçamento"
+    node "Contratação de materiais e serviços"
+    node "Ensaio da valsa"
+    node "Roupa para a família e as damas"
+    node "Divulgação" {
+      node "Convites"
+      node "Entrega de convites"
+      node "Nota na imprensa"
+    }
+  }
+  node "Festa" {
+    node "Local" {
+      node "Salão"
+      node "Toldos"
+      node "Iluminação"
+      node "Decoração" {
+        node "Decoração do salão"
+        node "Decoração das mesas"
+      }
+    }
+    node "Bufê"
+    node "Música"
+    node "Cerimonial"
+    node "Serviços de apoio" {
+      node "Orador"
+      node "Fotografia"
+      node "Filmagem"
+      node "Segurança"
+      node "Transporte"
+      node "Limpeza"
+    }
+  }
+  node "Finalização do Evento" {
+    node "Pagamento de contas"
+    node "Cartões de agradecimento"
+    node "Entrega de cartões de agradecimento"
+    node "Relatório do evento"
+  }
+}
+
+@enduml
