@@ -1,0 +1,27 @@
+@startuml
+title Organograma da Área de TI da Empresa Alfa
+
+node "Gerente de TI" {
+  node "Secretaria (Assessoria)"
+  node "Auditor (Assessoria)"
+  node "Coordenação de Help Desk" {
+    node "Analista de Suporte" {
+      node "Técnicos"
+      node "Atendentes"
+    }
+  }
+  node "Coordenação de Desenvolvimento" {
+    node "Analista de Sistemas" {
+      node "Programadores"
+      node "DBAs"
+    }
+  }
+  node "Coordenação de Infraestrutura" {
+    node "Analista de Infraestrutura" {
+      node "Técnicos de Rede"
+      node "Técnicos de Telefonia"
+    }
+    node "Analista de Telecom"
+  }
+}
+@enduml
