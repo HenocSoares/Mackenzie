@@ -1,1 +1,13 @@
+In Lesson 1, you learned about various activities in Usability Engineering, one of which is "Create prototypes." In Lesson 3, it was emphasized that a prototype is a concrete but partial representation of the intended system, which can be created using simple materials like paper or with the use of computational tools.
 
+What needs to be done:
+
+You and your group must develop a low-fidelity prototype of the user interface project, either on paper or using a tool, as described earlier.
+You and your group must develop a high-fidelity prototype of the user interface project, as described earlier.
+Notes:
+
+In the "Exploring Concepts" section of Lesson 3, there are videos about prototype creation tools, but you and your group may use others if desired.
+
+Remember to consider interface design principles when creating the prototypes.
+
+With the group you formed in Lesson 1, post the activity's results here.
