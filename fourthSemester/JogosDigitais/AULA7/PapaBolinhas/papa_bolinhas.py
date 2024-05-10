@@ -32,7 +32,7 @@ placar = 0
 posicaoPapaBolinhas = [400, 300]
 
 # Armazena num vetor a Velocidade de movimentacao do circulo
-velocidadePapaBolinhas = [5, 5]
+velocidadePapaBolinhas = [7, 7]
 
 # Variável para iniciar a posição do círculo vermelho
 criar = True
